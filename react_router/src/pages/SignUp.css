@@ -1,0 +1,135 @@
+/* Full Page Registration Container */
+.register-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://your-image-path.jpg") no-repeat center center/cover;
+  background-color: #a2aebb; /* Fallback color */
+  font-family: "Segoe UI", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+/* Main Card */
+.main-card {
+  display: flex;
+  width: 900px;
+  min-height: 550px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Left Panel (Brand) */
+.left-panel {
+  flex: 1.2;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to bottom, #000000, #111111);
+}
+
+.brand-content h1 {
+  color: #00d4ff;
+  font-size: 5rem; /* Adjusted for smaller screens */
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.brand-content p {
+  color: #a0a0a0;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Right Panel (Form) */
+.right-panel {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Form Input Groups */
+.input-group {
+  margin-bottom: 12px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.input-group label i {
+  margin-right: 8px;
+  width: 15px;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+}
+
+/* Registration Button */
+.reg-btn {
+  display: block;
+  width: fit-content;
+  margin: 15px auto 0; /* Center horizontally */
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.reg-btn:hover {
+  background-color: #45a049;
+}
+
+/* Login Link */
+.login-link {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #6a0dad;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1000px) {
+  .main-card {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .left-panel {
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+
+  .brand-content h1 {
+    font-size: 3.5rem;
+  }
+}
